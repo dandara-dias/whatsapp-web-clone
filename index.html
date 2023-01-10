@@ -12,9 +12,78 @@
   <script src="https://kit.fontawesome.com/cea4f864f2.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <h1>WhatsApp Web</h1>
-    <i class="fa-brands fa-whatsapp"></i>
-  </header>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="toolbar-container">
+        <img class="user-photo" src="Images/avatar1.png">
+        <div class="auxicons-toolbar-container">
+          <i class="fa-solid fa-spinner"></i>
+          <i class="fa-regular fa-comment"></i>
+          <i class="fa-solid fa-ellipsis"></i>
+        </div>
+      </div>
+      <div class="notification-container">
+        <i class="fa-solid fa-bell-slash"></i>
+        <p class="receive-notification">
+          Receba notificações de novas mensagens
+        </p>
+        <p class="activate-notification">
+          Ativar notificações na Área de Trabalho
+          <i class="fa-solid fa-circle-arrow-right"></i>
+        </p>
+      </div>
+      <div class="search-container">
+        <i id="contact-search" class="fa-solid fa-magnifying-glass"></i>
+        <input
+          id="search"
+          type="text"
+          name="search"
+          placeholder="Pesquisar ou começar uma nova conversa"
+        />
+      </div>
+      <div class="contacts-container">
+        <div class="contact-box active-chat">
+          <img class="user-photo" src="Images/avatar2.png">
+          <div class="user-info">
+            <p class="user-name">Pessoa Um</p>
+            <p class="user-messagepreview">
+              <i class="fa-solid fa-check-double"></i>
+              Oi, tudo bem?
+            </p>
+          </div>
+          <div class="message-info">
+            <p class="message-time">22:34</p>
+          </div>
+        </div>
+
+        <div class="contact-box">
+          <img class="user-photo" src="Images/avatar3.png">
+          <div class="user-info">
+            <p class="user-name">Pessoa Dois</p>
+            <p class="user-messagepreview">🤡</p>
+          </div>
+          <div class="message-info">
+            <p class="message-time">13:24</p>
+            <p class="message-pending">3</p>
+          </div>
+        </div>
+
+        <div class="contact-box">
+          <img class="user-photo" src="Images/avatar4.png">
+          <div class="user-info">
+            <p class="user-name">Pessoa Três</p>
+            <p class="user-messagepreview">Está frio hoje 🥶</p>
+          </div>
+          <div class="message-info">
+            <p class="message-time">05:50</p>
+            <p class="message-pending">2</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <main class="chat-container">
+
+    </main>
+  </div>
 </body>
 </html>
