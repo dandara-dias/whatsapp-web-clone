@@ -1,3 +1,96 @@
+:root {
+  --primary: #565656;
+  --secondary: #F7F5FB;
+  --terciary: #5FB0B7;
+  --details: #190E4F;
+}
+
 html, body, ul {
   font-family: 'Balsamiq Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.activate-notification {
+  font-size: 14px;
+}
+
+.auxicons-toolbar-container {
+  float: right;
+  height: 60px;
+  line-height: 60px;
+  padding-right: 20px;
+}
+
+.auxicons-toolbar-container i {
+  color: var(--secondary);
+  font-size: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.container {
+  height: 100vh;
+  position: relative;
+}
+
+.fa-solid.fa-bell-slash {
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 50%;
+  font-size: 18px;
+  color: var(--terciary);
+  background-color: var(--secondary);
+  position: absolute;
+  top: 20px;
+  left: 15px;
+}
+
+.notification-container {
+  width: 100%;
+  height: 90px;
+  padding-top: 23px;
+  padding-left: 80px;
+  background-color: var(--terciary);
+  color: var(--details);
+  position: relative;
+  box-sizing: border-box;
+}
+
+.notification-container p {
+  margin: 0;
+}
+
+.notification-container .receive-notification {
+  font-size: 15px;
+  margin-bottom: 3px;
+}
+
+.sidebar {
+  width: 410px;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+}
+
+.toolbar-container {
+  width: 100%;
+  height: 70px;
+  background-color: var(--primary);
+}
+
+.user-photo {
+  width: 50px;
+  border-radius: 50%;
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  background-color: var(--secondary);
 }
