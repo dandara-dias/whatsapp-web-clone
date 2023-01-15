@@ -3,16 +3,48 @@
   --secondary: #F7F5FB;
   --terciary: #5FB0B7;
   --details: #190E4F;
+  --extra: #BAA7B0;
 }
 
 html, body, ul {
   font-family: 'Balsamiq Sans', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: var(--primary);
 }
 
 ul {
   list-style: none;
+}
+
+#contact-search {
+  position: absolute;
+  left: 30px;
+  top: 18px;
+  font-size: 14px;
+  color: var(--primary);
+}
+
+#search {
+  border: none;
+  height: 35px;
+  width: 385px;
+  padding-left: 60px;
+  border-radius: 17.5px;
+  background-color: var(--secondary);
+  box-sizing: border-box;
+}
+
+#search::placeholder {
+  color: var(--primary);
+}
+
+.active-chat.contact-box {
+  background-color: var(--extra);
+}
+
+.active-chat.contact-box:hover {
+  background-color: var(--extra);
 }
 
 .activate-notification {
@@ -34,6 +66,32 @@ ul {
   cursor: pointer;
 }
 
+.contact-box {
+  cursor: pointer;
+  height: 72px;
+  background-color: var(--primary);
+  border-top: 1px solid var(--details);
+  position: relative;
+  box-sizing: border-box;
+}
+
+.contact-box:hover {
+  background-color: var(--extra);
+}
+
+.contact-box:last-child {
+  border-bottom: 1px solid var(--details);
+}
+
+.contact-box .user-photo {
+  width: 55px;
+}
+
+.contacts-container {
+  height: auto;
+  background-color: var(--primary);
+}
+
 .container {
   height: 100vh;
   position: relative;
@@ -51,6 +109,36 @@ ul {
   position: absolute;
   top: 20px;
   left: 15px;
+}
+
+.fa-solid.fa-check-double {
+  margin-right: 5px;
+  color: var(--terciary);
+}
+
+.message-info {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  display: inline-block;
+}
+
+.message-info .message-time {
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: var(--details);
+}
+
+.message-pending {
+  background-color: var(--details);
+  color: var(--secondary);
+  width: 19px;
+  height: 19px;
+  line-height: 19px;
+  font-size: 12px;
+  border-radius: 50%;
+  text-align: center;
+  float: right;
 }
 
 .notification-container {
@@ -73,6 +161,17 @@ ul {
   margin-bottom: 3px;
 }
 
+.search-container {
+  height: 50px;
+  width: 100%;
+  padding-left: 7.5px;
+  padding-top: 7.5px;
+  background-color: var(--primary);
+  position: relative;
+  color: var(--secondary);
+  box-sizing: border-box;
+}
+
 .sidebar {
   width: 410px;
   height: 100%;
@@ -84,6 +183,27 @@ ul {
   width: 100%;
   height: 70px;
   background-color: var(--primary);
+}
+
+.user-info {
+  margin-left: 80px;
+  padding-top: 10px;
+  display: inline-block;
+}
+
+.user-info p, .message-info p {
+  margin: 0;
+}
+
+.user-messagepreview {
+  font-size: 14px;
+  color: var(--details);
+}
+
+.user-name {
+  font-size: 16px;
+  color: var(--details);
+  margin-bottom: 12px;
 }
 
 .user-photo {
