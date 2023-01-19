@@ -11,10 +11,25 @@ html, body, ul {
   margin: 0;
   padding: 0;
   background-color: var(--primary);
+  overflow: hidden;
 }
 
 ul {
   list-style: none;
+}
+
+#chatmessage {
+  position: absolute;
+  top: 10px;
+  left: 60px;
+  background-color: var(--primary);
+  color: var(--secondary);
+  border: none;
+  height: 35px;
+  border-radius: 20px;
+  padding-left: 20px;
+  font-size: 16px;
+  width: 815px;
 }
 
 #contact-search {
@@ -66,6 +81,14 @@ ul {
   cursor: pointer;
 }
 
+.bg-image {
+  background-image: url('../Images/background_whats.jpg');
+  background-repeat: repeat;
+  opacity: .30;
+  width: 100%;
+  height: 100%;
+}
+
 .chat-container {
   position: absolute;
   top: 0;
@@ -75,8 +98,28 @@ ul {
   border-left: 1px solid var(--details);
 }
 
+.chat-messages {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  padding: 30px 80px;
+  box-sizing: border-box;
+}
+
+.chat-messages p {
+  display: block;
+  color: var(--secondary);
+  font-size: 16px;
+  padding: 7px;
+  border-radius: 7px;
+  position: relative;
+  width: 200px;
+}
+
 .chat-navbar {
-  height: 60px;
+  height: 69px;
   padding-left: 75px;
 }
 
@@ -141,6 +184,10 @@ ul {
   position: relative;
 }
 
+.fa-microphone {
+  float: right;
+}
+
 .fa-solid.fa-bell-slash {
   width: 45px;
   height: 45px;
@@ -158,6 +205,21 @@ ul {
 .fa-solid.fa-check-double {
   margin-right: 5px;
   color: var(--terciary);
+}
+
+.guest-message {
+  background-color: var(--primary);
+}
+
+.guest-message:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 17px solid transparent;
+  border-right: 17px solid var(--primary);
+  position: absolute;
+  top: 0;
+  left: -10px;
 }
 
 .message-info {
@@ -183,6 +245,15 @@ ul {
   border-radius: 50%;
   text-align: center;
   float: right;
+}
+
+.messages-container {
+  height: calc(100% - 120px);
+  position: relative;
+}
+
+.messages-container p {
+  margin: 0;
 }
 
 .notification-container {
@@ -216,6 +287,21 @@ ul {
   box-sizing: border-box;
 }
 
+.sendmessage-container {
+  height: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+
+.sendmessage-container i {
+  font-size: 24px;
+  color: var(--secondary);
+  cursor: pointer;
+  height: 60px;
+  line-height: 60px;
+}
+
 .sidebar {
   width: 410px;
   height: 100%;
@@ -237,6 +323,22 @@ ul {
 
 .user-info p, .message-info p {
   margin: 0;
+}
+
+.user-message {
+  background-color: #305F51;
+  float: right;
+}
+
+.user-message:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 17px solid transparent;
+  border-left: 17px solid #305F51;
+  position: absolute;
+  top: 0;
+  right: -10px;
 }
 
 .user-messagepreview {
