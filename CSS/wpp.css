@@ -18,6 +18,21 @@ aside > div {
   background-color: var(--primary);
 }
 
+aside div span {
+  margin-left: 80px;
+  padding-top: 10px;
+  display: inline-block;
+}
+
+aside div span:nth-child(2) {
+  font-size: 14px;
+  color: var(--details);
+}
+
+aside div span p, .message-info p {
+  margin: 0;
+}
+
 aside section {
   width: 100%;
   height: 90px;
@@ -26,6 +41,16 @@ aside section {
   background-color: var(--terciary);
   color: var(--details);
   position: relative;
+  box-sizing: border-box;
+}
+
+aside section input {
+  border: none;
+  height: 35px;
+  width: 385px;
+  padding-left: 60px;
+  border-radius: 17.5px;
+  background-color: var(--secondary);
   box-sizing: border-box;
 }
 
@@ -93,16 +118,6 @@ ul {
 
 #chatmessage:focus {
   outline: 0;
-}
-
-aside section input {
-  border: none;
-  height: 35px;
-  width: 385px;
-  padding-left: 60px;
-  border-radius: 17.5px;
-  background-color: var(--secondary);
-  box-sizing: border-box;
 }
 
 .active-chat.contact-box {
@@ -194,6 +209,56 @@ aside section input {
 
 .contact-box .user-photo {
   width: 55px;
+}
+
+.contact-box:nth-child(1) .message-info::after {
+  font-size: 12px;
+  margin-bottom: 5px;
+  margin-right: 20px;
+  color: var(--details);
+  content: "22:34";
+}
+
+.contact-box:nth-child(2) .message-info::after {
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: var(--details);
+  content: "13:24";
+}
+
+.contact-box:nth-child(2) .message-info::before {
+  background-color: var(--details);
+  color: var(--secondary);
+  width: 19px;
+  height: 19px;
+  line-height: 19px;
+  font-size: 12px;
+  border-radius: 50%;
+  text-align: center;
+  float: right;
+  content: "3";
+  margin-top: 20px;
+}
+
+.contact-box:nth-child(3) .message-info::after {
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: var(--details);
+  content: "05:50";
+}
+
+.contact-box:nth-child(3) .message-info::before {
+  background-color: var(--details);
+  color: var(--secondary);
+  width: 19px;
+  height: 19px;
+  line-height: 19px;
+  font-size: 12px;
+  border-radius: 50%;
+  text-align: center;
+  float: right;
+  content: "2";
+  margin-top: 20px;
 }
 
 .contactinfo-container {
@@ -317,16 +382,6 @@ aside section input {
   line-height: 60px;
 }
 
-.user-info {
-  margin-left: 80px;
-  padding-top: 10px;
-  display: inline-block;
-}
-
-.user-info p, .message-info p {
-  margin: 0;
-}
-
 .user-message {
   background-color: #305F51;
   float: right;
@@ -341,11 +396,6 @@ aside section input {
   position: absolute;
   top: 0;
   right: -10px;
-}
-
-.user-messagepreview {
-  font-size: 14px;
-  color: var(--details);
 }
 
 .user-name {
