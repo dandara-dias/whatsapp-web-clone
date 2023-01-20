@@ -13,35 +13,37 @@
 </head>
 <body>
   <div class="container">
-    <aside class="sidebar">
-      <div class="toolbar-container">
+    <aside>
+      <header>
         <img class="user-photo" src="Images/avatar1.jpg">
-        <div class="auxicons-toolbar-container">
+        <div>
           <i class="fa-solid fa-spinner"></i>
           <i class="fa-regular fa-comment"></i>
           <i class="fa-solid fa-ellipsis"></i>
         </div>
-      </div>
-      <div class="notification-container">
+      </header>
+
+      <section>
         <i class="fa-solid fa-bell-slash"></i>
-        <p class="receive-notification">
+        <p>
           Receba notificações de novas mensagens
         </p>
-        <p class="activate-notification">
+        <p>
           Ativar notificações na Área de Trabalho
           <i class="fa-solid fa-circle-arrow-right"></i>
         </p>
-      </div>
-      <div class="search-container">
-        <i id="contact-search" class="fa-solid fa-magnifying-glass"></i>
+      </section>
+
+      <section class="search-container">
+        <i class="fa-solid fa-magnifying-glass"></i>
         <input
-          id="search"
           type="text"
           name="search"
           placeholder="Pesquisar ou começar uma nova conversa"
         />
-      </div>
-      <div class="contacts-container">
+      </section>
+
+      <div>
         <div class="contact-box active-chat">
           <img class="user-photo" src="Images/avatar2.jpg">
           <div class="user-info">
