@@ -1,6 +1,6 @@
 <h1 align="center">< WhatsApp Web Clone /></h1>
 
-<p align="center">🖥️ Aplicação clone do WhatsApp Web, com tema escuro. 🖥️ Em construção ✔️</p>
+<p align="center">🖥️ Aplicação clone do WhatsApp Web, com tema escuro. 🖥️ Concluído ✔️</p>
 
 <p align="center">
 • <a href="#-sobre-o-projeto">Sobre</a> •
