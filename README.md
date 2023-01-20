@@ -31,7 +31,7 @@ O hDC Host é um site informativo sobre uma empresa de hospedagens. Em uma pági
 ## 🎨 Demonstração
 
 <p align="center">
-  <img alt="wpp" title="#wpp" src="wpp.gif" width="800px">
+  <img alt="wpp" title="#wpp" src="wpp.png" width="800px">
 </p>
 
 ## 🚀 Como executar o projeto
