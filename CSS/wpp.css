@@ -1,0 +1,414 @@
+:root {
+  --primary: #565656;
+  --secondary: #F7F5FB;
+  --terciary: #5FB0B7;
+  --details: #190E4F;
+  --extra: #BAA7B0;
+}
+
+aside {
+  width: 410px;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+}
+
+aside > div {
+  height: auto;
+  background-color: var(--primary);
+}
+
+aside div span {
+  margin-left: 80px;
+  padding-top: 10px;
+  display: inline-block;
+}
+
+aside div span:nth-child(2) {
+  font-size: 14px;
+  color: var(--details);
+}
+
+aside div span p, .message-info p {
+  margin: 0;
+}
+
+aside section {
+  width: 100%;
+  height: 90px;
+  padding-top: 23px;
+  padding-left: 80px;
+  background-color: var(--terciary);
+  color: var(--details);
+  position: relative;
+  box-sizing: border-box;
+}
+
+aside section input {
+  border: none;
+  height: 35px;
+  width: 385px;
+  padding-left: 60px;
+  border-radius: 17.5px;
+  background-color: var(--secondary);
+  box-sizing: border-box;
+}
+
+aside section input:focus {
+  outline: 0;
+}
+
+aside section input::placeholder {
+  color: var(--primary);
+}
+
+
+aside section p {
+  margin: 0;
+  font-size: 15px;
+  margin-bottom: 3px;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  background-color: var(--primary);
+}
+
+header div {
+  float: right;
+  height: 60px;
+  line-height: 60px;
+  padding-right: 20px;
+}
+
+header div i {
+  color: var(--secondary);
+  font-size: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+html, body, ul {
+  font-family: 'Balsamiq Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary);
+  overflow: hidden;
+}
+
+main {
+  position: absolute;
+  top: 0;
+  left: 410px;
+  width: calc(100% - 410px);
+  height: 100%;
+  border-left: 1px solid var(--details);
+}
+
+nav {
+  height: 69px;
+  padding-left: 75px;
+}
+
+nav p {
+  margin: 0;
+}
+
+nav span {
+  display: inline-block;
+}
+
+nav span .user-name {
+  font-size: 16px;
+  height: 70px;
+  line-height: 70px;
+}
+
+nav ul {
+  float: right;
+  height: 60px;
+  line-height: 60px;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 18px;
+  color: var(--secondary);
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.active-chat.contact-box {
+  background-color: var(--extra);
+}
+
+.active-chat.contact-box:hover {
+  background-color: var(--extra);
+}
+
+.contact-box {
+  cursor: pointer;
+  height: 72px;
+  background-color: var(--primary);
+  border-top: 1px solid var(--details);
+  position: relative;
+  box-sizing: border-box;
+}
+
+.contact-box:hover {
+  background-color: var(--extra);
+}
+
+.contact-box:last-child {
+  border-bottom: 1px solid var(--details);
+}
+
+.contact-box .user-photo {
+  width: 55px;
+}
+
+.contact-box:nth-child(1) .message-info::after {
+  font-size: 12px;
+  margin-bottom: 5px;
+  margin-right: 20px;
+  color: var(--details);
+  content: "22:34";
+}
+
+.contact-box:nth-child(2) .message-info::after {
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: var(--details);
+  content: "13:24";
+}
+
+.contact-box:nth-child(2) .message-info::before {
+  background-color: var(--details);
+  color: var(--secondary);
+  width: 19px;
+  height: 19px;
+  line-height: 19px;
+  font-size: 12px;
+  border-radius: 50%;
+  text-align: center;
+  float: right;
+  content: "3";
+  margin-top: 20px;
+}
+
+.contact-box:nth-child(3) .message-info::after {
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: var(--details);
+  content: "05:50";
+}
+
+.contact-box:nth-child(3) .message-info::before {
+  background-color: var(--details);
+  color: var(--secondary);
+  width: 19px;
+  height: 19px;
+  line-height: 19px;
+  font-size: 12px;
+  border-radius: 50%;
+  text-align: center;
+  float: right;
+  content: "2";
+  margin-top: 20px;
+}
+
+.container {
+  height: 100vh;
+  position: relative;
+}
+
+.fa-microphone {
+  float: right;
+}
+
+.fa-solid.fa-bell-slash {
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 50%;
+  font-size: 18px;
+  color: var(--terciary);
+  background-color: var(--secondary);
+  position: absolute;
+  top: 20px;
+  left: 15px;
+}
+
+.fa-solid.fa-check-double {
+  margin-right: 5px;
+  color: var(--terciary);
+}
+
+.guest-message {
+  background-color: var(--primary);
+}
+
+.guest-message:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 17px solid transparent;
+  border-right: 17px solid var(--primary);
+  position: absolute;
+  top: 0;
+  left: -10px;
+}
+
+.message-info {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  display: inline-block;
+}
+
+.message-info .message-time {
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: var(--details);
+}
+
+.message-pending {
+  background-color: var(--details);
+  color: var(--secondary);
+  width: 19px;
+  height: 19px;
+  line-height: 19px;
+  font-size: 12px;
+  border-radius: 50%;
+  text-align: center;
+  float: right;
+}
+
+.messages-container {
+  height: calc(100% - 120px);
+  position: relative;
+}
+
+.messages-container > div {
+  background-image: url('../Images/background_whats.jpg');
+  background-repeat: repeat;
+  opacity: .30;
+  width: 100%;
+  height: 100%;
+}
+
+.messages-container p {
+  margin: 0;
+}
+
+.messages-container > span {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  padding: 30px 80px;
+  box-sizing: border-box;
+}
+
+.messages-container > span p {
+  display: block;
+  color: var(--secondary);
+  font-size: 16px;
+  padding: 7px;
+  border-radius: 7px;
+  position: relative;
+  width: 200px;
+}
+
+.search-container {
+  height: 50px;
+  width: 100%;
+  padding-left: 7.5px;
+  padding-top: 7.5px;
+  background-color: var(--primary);
+  position: relative;
+  color: var(--secondary);
+  box-sizing: border-box;
+}
+
+.search-container > i {
+  position: absolute;
+  left: 30px;
+  top: 18px;
+  font-size: 14px;
+  color: var(--primary);
+}
+
+.sendmessage-container {
+  height: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+
+.sendmessage-container i {
+  font-size: 24px;
+  color: var(--secondary);
+  cursor: pointer;
+  height: 60px;
+  line-height: 60px;
+}
+
+.sendmessage-container > input {
+  position: absolute;
+  top: 10px;
+  left: 60px;
+  background-color: var(--primary);
+  color: var(--secondary);
+  border: none;
+  height: 35px;
+  border-radius: 20px;
+  padding-left: 20px;
+  font-size: 16px;
+  width: 815px;
+}
+
+.sendmessage-container > input:focus {
+  outline: 0;
+}
+
+.user-message {
+  background-color: #305F51;
+  float: right;
+}
+
+.user-message:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 17px solid transparent;
+  border-left: 17px solid #305F51;
+  position: absolute;
+  top: 0;
+  right: -10px;
+}
+
+.user-name {
+  font-size: 16px;
+  color: var(--details);
+  margin-bottom: 12px;
+}
+
+.user-photo {
+  width: 50px;
+  border-radius: 50%;
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  background-color: var(--secondary);
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp Web Clone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="CSS/wpp.css">
+  <script src="https://kit.fontawesome.com/cea4f864f2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <aside>
+      <header>
+        <img class="user-photo" src="Images/avatar1.jpg">
+        <div>
+          <i class="fa-solid fa-spinner"></i>
+          <i class="fa-regular fa-comment"></i>
+          <i class="fa-solid fa-ellipsis"></i>
+        </div>
+      </header>
+
+      <section>
+        <i class="fa-solid fa-bell-slash"></i>
+        <p>
+          Receba notificações de novas mensagens
+        </p>
+        <p>
+          Ativar notificações na Área de Trabalho
+          <i class="fa-solid fa-circle-arrow-right"></i>
+        </p>
+      </section>
+
+      <section class="search-container">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+          type="text"
+          name="search"
+          placeholder="Pesquisar ou começar uma nova conversa"
+        />
+      </section>
+
+      <div>
+        <div class="contact-box active-chat">
+          <img class="user-photo" src="Images/avatar2.jpg">
+          <span>
+            <p class="user-name">Roronoa Zoro</p>
+            <p>
+              <i class="fa-solid fa-check-double"></i>
+              Gomu gomu no... Pistol!
+            </p>
+          </span>
+          <span class="message-info"></span>
+        </div>
+
+        <div class="contact-box">
+          <img class="user-photo" src="Images/avatar3.jpg">
+          <span>
+            <p class="user-name">Nami</p>
+            <p>🤡</p>
+          </span>
+          <span class="message-info"></span>
+        </div>
+
+        <div class="contact-box">
+          <img class="user-photo" src="Images/avatar4.jpg">
+          <span>
+            <p class="user-name">Usopp</p>
+            <p>É mentira 🤥</p>
+          </span>
+          <span class="message-info"></span>
+        </div>
+      </div>
+    </aside>
+    
+    <main>
+      <nav>
+        <span>
+          <img class="user-photo" src="Images/avatar2.jpg">
+          <p class="user-name">Roronoa Zoro</p>
+        </span>
+
+        <ul>
+          <li><i class="fa-solid fa-magnifying-glass"></i></li>
+          <li><i class="fa-solid fa-paperclip"></i></li>
+          <li><i class="fa-solid fa-ellipsis"></i></li>
+        </ul>
+      </nav>
+
+      <div class="messages-container">
+        <div></div>
+        <span>
+          <p class="guest-message">Isso, vem, o Zoro sola!</p>
+          <p class="user-message">Gomu gomu no... Pistol!</p>
+        </span>
+      </div>
+
+      <div class="sendmessage-container">
+        <i class="fa-regular fa-face-smile"></i>
+        <input
+          type="text"
+          name="message"
+          placeholder="Mensagem"
+        />
+        <i class="fa-solid fa-microphone"></i>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
