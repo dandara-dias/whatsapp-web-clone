@@ -32,6 +32,10 @@ ul {
   width: 815px;
 }
 
+#chatmessage:focus {
+  outline: 0;
+}
+
 #contact-search {
   position: absolute;
   left: 30px;
@@ -48,6 +52,10 @@ ul {
   border-radius: 17.5px;
   background-color: var(--secondary);
   box-sizing: border-box;
+}
+
+#search:focus {
+  outline: 0;
 }
 
 #search::placeholder {
