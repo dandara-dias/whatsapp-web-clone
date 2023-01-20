@@ -13,7 +13,7 @@
 
 ## 💻 Sobre o projeto
 
-O hDC Host é um site informativo sobre uma empresa de hospedagens. Em uma página única e responsiva, foram utilizadas técnicas mais avançadas de HTML5 e CSS3, como flexbox, imagens com parallax e animações. Além disso, foi utilizado JavaScript para construir um cursor interativo e FontAwesome para incluir ícones. 
+Clone do WhatsApp Web em tema escuro. Foram utilizadas técnicas HTML5 e CSS3, como pseudoseletores, pseudoclasses e técnicas de posicionamento. Além disso, foi incluído um tema especial do anime One Piece, em nome da criatividade. 
 
 ## ⚙️ Funcionalidades
 
