@@ -65,6 +65,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 -   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)**  → Extensions:  **[Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)**
 -   Markdown:  **[Rocketseat](https://blog.rocketseat.com.br/como-fazer-um-bom-readme/)**
+-   Favicon:  **[Icons8](https://icons8.com.br/icon/30448/whatsapp)**
 -   Ícones:  **[FontAwesome](https://fontawesome.com/)**
 -   Paleta de cores: **[Coolors](https://coolors.co/palette/565656-baa7b0-5fb0b7-190e4f-f7f5fb)**
 -   Fontes:  **[Balsamiq Sans](https://fonts.google.com/share?selection.family=Balsamiq%20Sans)**
